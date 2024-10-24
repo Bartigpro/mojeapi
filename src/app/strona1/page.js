@@ -1,5 +1,14 @@
 "use client"
 import { useEffect, useState } from "react"
+import { ModeToggle } from "@/components/ui/mode"
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu"
 import {
     Card,
     CardContent,
@@ -47,6 +56,8 @@ export default function Page() {
 
     return (
         <div className="flex flex-wrap gap-5 bg-gray-900 justify-center">
+            <div className="w-full justify-end flex pt-6 pr-6">            <ModeToggle className="right-2"></ModeToggle> <br/></div>
+  
 
 
             {dat && dat.map((item, idx) => (
